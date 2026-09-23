@@ -2,10 +2,10 @@
 
 个人技术笔记站，基于 Hexo + Fluid 主题构建。
 
-[![Website](https://img.shields.io/badge/website-yima--gu.github.io-blue)](https://yima-gu.github.io)
+[![Website](https://img.shields.io/badge/website-yima--gu.github.io%2Fblog-blue)](https://yima-gu.github.io/blog/)
 [![Hexo](https://img.shields.io/badge/hexo-8.x-blue)](https://hexo.io)
 
-**网站地址**: [https://yima-gu.github.io](https://yima-gu.github.io)
+**网站地址**: [https://yima-gu.github.io/blog/](https://yima-gu.github.io/blog/)
 
 ## 内容方向
 
@@ -35,8 +35,8 @@
 ### 快速开始
 
 ```bash
-git clone https://github.com/Yima-Gu/Yima-Gu.github.io.git
-cd Yima-Gu.github.io
+git clone https://github.com/Yima-Gu/blog.git
+cd blog
 npm install
 npm run server
 ```
@@ -81,8 +81,8 @@ npm run server
 ## 功能特性
 
 - 站内搜索（hexo-generator-search）
-- RSS 订阅（`/atom.xml`）
-- Sitemap（`/sitemap.xml`）
+- RSS 订阅（`/blog/atom.xml`）
+- Sitemap（`/blog/sitemap.xml`）
 - 数学公式（KaTeX）
 - Mermaid 图表
 - Giscus 评论

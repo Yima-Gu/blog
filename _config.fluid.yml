@@ -135,7 +135,7 @@ post:
 # giscus 评论系统配置（需与 layout/_partials/comments/giscus.ejs 条件匹配）
 # 注意：键名使用官方要求的短横线形式，如 repo-id、category-id 等
 giscus:
-  repo: Yima-Gu/Yima-Gu.github.io            # 必填：GitHub 仓库 (owner/repo)
+  repo: Yima-Gu/blog                         # 必填：GitHub 仓库 (owner/repo)
   repo-id: R_kgDOPz-yyQ                     # 必填：对应仓库的 ID（在 giscus 配置页面可见）
   category: General                         # 必填：讨论分类名称
   category-id: DIC_kwDOPz-yyc4CvvD2         # 必填：讨论分类 ID
