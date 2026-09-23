@@ -8,8 +8,8 @@
 <head>
   <meta charset="UTF-8">
 
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/my_icon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/blog/img/fluid.png">
+  <link rel="icon" href="/blog/img/my_icon.png">
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
@@ -22,32 +22,32 @@
     <meta name="description" content="Convolutional Neural Networks">
 <meta property="og:type" content="article">
 <meta property="og:title" content="DL Note-3 CNN">
-<meta property="og:url" content="https://yima-gu.github.io/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/index.html">
+<meta property="og:url" content="https://yima-gu.github.io/blog/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/index.html">
 <meta property="og:site_name" content="Yima Gu&#39;s Blog">
 <meta property="og:description" content="Convolutional Neural Networks">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://yima-gu.github.io/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/%7B7AC9125F-FA2D-42F9-B0CF-085ABFFB668F%7D.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/%7B7202EECA-CD25-4EE1-A5C9-02F0263C968C%7D.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/%7BCFAAFBDA-A81C-4931-9C2C-CBD64F40E29C%7D.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/%7B1197B7EA-3F5B-40C9-8ADF-861B8AACBDC2%7D.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/%7B382F2347-B42F-46CB-83DB-F25DDE49A91E%7D.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/%7B43BF44F4-D211-4165-AE84-257E702582A0%7D.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/%7B6F8AFF72-4C3D-4FAD-8FC9-90F7FED6E8B2%7D.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/%7B39D210C3-7C1B-4913-AC78-12E71A8FD13B%7D.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/%7BE3B121C1-5782-4762-A983-042799DA4ED9%7D.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/%7B6767A6D4-59B6-4B62-9FE9-427D009BB837%7D.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/%7B8F67BE27-E8CA-4921-99B2-C57FFFAE5E7B%7D.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/%7B681C5361-F2ED-427F-86C2-48C9EC68AADF%7D.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/%7B5DE8620F-D5FB-4E82-96D7-0E03CCCCAF82%7D.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/Pasted%20image%2020250316132626.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/Pasted%20image%2020250316134751.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/%7B7AC9125F-FA2D-42F9-B0CF-085ABFFB668F%7D.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/%7B7202EECA-CD25-4EE1-A5C9-02F0263C968C%7D.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/%7BCFAAFBDA-A81C-4931-9C2C-CBD64F40E29C%7D.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/%7B1197B7EA-3F5B-40C9-8ADF-861B8AACBDC2%7D.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/%7B382F2347-B42F-46CB-83DB-F25DDE49A91E%7D.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/%7B43BF44F4-D211-4165-AE84-257E702582A0%7D.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/%7B6F8AFF72-4C3D-4FAD-8FC9-90F7FED6E8B2%7D.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/%7B39D210C3-7C1B-4913-AC78-12E71A8FD13B%7D.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/%7BE3B121C1-5782-4762-A983-042799DA4ED9%7D.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/%7B6767A6D4-59B6-4B62-9FE9-427D009BB837%7D.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/%7B8F67BE27-E8CA-4921-99B2-C57FFFAE5E7B%7D.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/%7B681C5361-F2ED-427F-86C2-48C9EC68AADF%7D.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/%7B5DE8620F-D5FB-4E82-96D7-0E03CCCCAF82%7D.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/Pasted%20image%2020250316132626.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/Pasted%20image%2020250316134751.png">
 <meta property="article:published_time" content="2025-07-10T04:30:00.000Z">
-<meta property="article:modified_time" content="2026-07-01T11:38:22.789Z">
+<meta property="article:modified_time" content="2026-09-23T08:10:17.381Z">
 <meta property="article:author" content="Yima Gu">
 <meta property="article:tag" content="CNN">
 <meta property="article:tag" content="Deep Learning">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://yima-gu.github.io/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/%7B7AC9125F-FA2D-42F9-B0CF-085ABFFB668F%7D.png">
+<meta name="twitter:image" content="https://yima-gu.github.io/blog/2025/07/10/Deep%20Learning/DL%20Note-3%20CNN/%7B7AC9125F-FA2D-42F9-B0CF-085ABFFB668F%7D.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -79,33 +79,33 @@
 <link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
 
 
-<link  rel="stylesheet" href="/css/main.css" />
+<link  rel="stylesheet" href="/blog/css/main.css" />
 
 
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  <link id="highlight-css" rel="stylesheet" href="/blog/css/highlight.css" />
   
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+    <link id="highlight-css-dark" rel="stylesheet" href="/blog/css/highlight-dark.css" />
   
 
 
 
   
-<link rel="stylesheet" href="/css/custom.css">
+<link rel="stylesheet" href="/blog/css/custom.css">
 
 
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"yima-gu.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":"G-JFL0C5NV2V","tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"yima-gu.github.io","root":"/blog/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":"G-JFL0C5NV2V","tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/blog/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
       Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
     }
   </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
+  <script  src="/blog/js/utils.js" ></script>
+  <script  src="/blog/js/color-schema.js" ></script>
   
 
   
@@ -121,7 +121,7 @@
 
 
   
-<meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/atom.xml" title="Yima Gu's Blog" type="application/atom+xml">
+<meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/blog/atom.xml" title="Yima Gu's Blog" type="application/atom+xml">
 </head>
 
 
@@ -134,7 +134,7 @@
 <div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand" href="/blog/">
       <strong>Yima Gu&#39;s Blog</strong>
     </a>
 
@@ -153,7 +153,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/" target="_self">
+              <a class="nav-link" href="/blog/" target="_self">
                 <i class="iconfont icon-home-fill"></i>
                 <span>首页</span>
               </a>
@@ -165,7 +165,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/series/" target="_self">
+              <a class="nav-link" href="/blog/series/" target="_self">
                 <i class="iconfont icon-books-fill"></i>
                 <span>系列笔记</span>
               </a>
@@ -177,7 +177,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/archives/" target="_self">
+              <a class="nav-link" href="/blog/archives/" target="_self">
                 <i class="iconfont icon-archive-fill"></i>
                 <span>归档</span>
               </a>
@@ -189,7 +189,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/categories/" target="_self">
+              <a class="nav-link" href="/blog/categories/" target="_self">
                 <i class="iconfont icon-category-fill"></i>
                 <span>分类</span>
               </a>
@@ -201,7 +201,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/tags/" target="_self">
+              <a class="nav-link" href="/blog/tags/" target="_self">
                 <i class="iconfont icon-tags-fill"></i>
                 <span>标签</span>
               </a>
@@ -213,7 +213,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/about/" target="_self">
+              <a class="nav-link" href="/blog/about/" target="_self">
                 <i class="iconfont icon-user-fill"></i>
                 <span>关于</span>
               </a>
@@ -243,7 +243,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/bg/post.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('/blog/img/bg/post.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -361,7 +361,7 @@
 <li>卷积核的大小为<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>×</mo><mn>5</mn><mo>×</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">5 \times 5 \times 3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">5</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">5</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span></span></span></span>（举例），即3个通道，每个通道大小为<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>×</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">5 \times 5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">5</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">5</span></span></span></span>。然后在整个图片上进行平移，计算卷积操作。（类似于卷积的定义）</li>
 <li>卷积的计算操作为：卷积核在图片上平移，计算对应位置的乘积和。</li>
 </ul>
-<img src="{7AC9125F-FA2D-42F9-B0CF-085ABFFB668F}.png" srcset="/img/loading.gif" lazyload alt="" width="850">
+<img src="{7AC9125F-FA2D-42F9-B0CF-085ABFFB668F}.png" srcset="/blog/img/loading.gif" lazyload alt="" width="850">
 <p>上面的公式是在移动到某个位置<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>w</mi><mo separator="true">,</mo><mi>h</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(w,h)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">h</span><span class="mclose">)</span></span></span></span>的时候，计算对应位置的乘积和。然后将结果存储在一个新的矩阵中。</p>
 <p>虽然我们常将此过程概念化为卷积核在图像上的“滑动”（一种<strong>串行</strong>算法），但现代深度学习框架早已摒弃这种低效方式。为了实现惊人的速度，系统会为<strong>每一个局部感受野</strong>分配一个“神经元”，<strong>并行</strong>计算所有位置的点积。正是这种大规模的并行架构，使得CNN能够在GPU上高效处理海量图像数据。</p>
 <p>对于一个尺寸为<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>×</mo><mi>H</mi><mo>×</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">W \times H \times C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">W</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span>（宽 × 高 × 通道数）的输入，使用<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>×</mo><mi>K</mi><mo>×</mo><mi>C</mi><mo>×</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">K×K×C×D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">K</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">K</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span></span></span></span>个卷积核（其中 D 是卷积核的数量），得到的输出特征图尺寸为：</p>
@@ -373,7 +373,7 @@
           </div>
 <p>CNN大部分的显存占用并非用于存储权重，而是用于存储在<strong>反向传播</strong>过程中所需的庞大<strong>中间特征图</strong>。这也是深度学习高度依赖GPU加速计算的主要原因。</p>
 <h4 id="Dilated-Stride-Convolution">Dilated&amp; Stride Convolution</h4>
-<img src="{7202EECA-CD25-4EE1-A5C9-02F0263C968C}.png" srcset="/img/loading.gif" lazyload alt="" width="800">
+<img src="{7202EECA-CD25-4EE1-A5C9-02F0263C968C}.png" srcset="/blog/img/loading.gif" lazyload alt="" width="800">
 <p>在卷积操作中，我们可以使用不同的步长来进行卷积操作。<strong>步长（Stride）</strong> 定义了卷积核在输入张量上移动的间隔距离。这样的操作会改变输出的大小。当步长 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">S=1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span>时，卷积核逐像素移动，输出特征图的尺寸变化较小。然而，当<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">S&gt;1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7224em;vertical-align:-0.0391em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span>时（例如<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">S=2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span>），卷积核会“跳跃”移动，这是一种高效的<strong>下采样（Downsampling）</strong> 机制。</p>
 <p><strong>作用：</strong></p>
 <ul>
@@ -399,7 +399,7 @@
 <p>在卷积网络中，激活函数可以使用ReLU函数，这样的操作可以避免梯度消失的问题。有时候使用的是Leaky ReLU函数，这样的操作在某些模型中可以减少神经元死亡的问题。</p>
 <p class="katex-block "><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>L</mi><mi>e</mi><mi>a</mi><mi>k</mi><mi>y</mi><mi>R</mi><mi>e</mi><mi>L</mi><mi>U</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mrow><mo fence="true">{</mo><mtable rowspacing="0.36em" columnalign="left left" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>x</mi></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>0.01</mn><mi>x</mi></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>x</mi><mo>≤</mo><mn>0</mn></mrow></mstyle></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">LeakyReLU(x) = \begin{cases} x &amp; x&gt;0 \\ 0.01x &amp; x \leq 0 \end{cases}
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">L</span><span class="mord mathnormal">e</span><span class="mord mathnormal" style="margin-right:0.03148em;">ak</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mord mathnormal">e</span><span class="mord mathnormal" style="margin-right:0.10903em;">LU</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:3em;vertical-align:-1.25em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size4">{</span></span><span class="mord"><span class="mtable"><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.69em;"><span style="top:-3.69em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord mathnormal">x</span></span></span><span style="top:-2.25em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord">0.01</span><span class="mord mathnormal">x</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.19em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:1em;"></span><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.69em;"><span style="top:-3.69em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">0</span></span></span><span style="top:-2.25em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.19em;"><span></span></span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
-<img src="{CFAAFBDA-A81C-4931-9C2C-CBD64F40E29C}.png" srcset="/img/loading.gif" lazyload alt="" width="800">
+<img src="{CFAAFBDA-A81C-4931-9C2C-CBD64F40E29C}.png" srcset="/blog/img/loading.gif" lazyload alt="" width="800">
 <table>
 <thead>
 <tr>
@@ -449,7 +449,7 @@
 在现实生活中，多尺度是一个基本的特征，例如在大气系统、气候系统中，有较大的气流和较小部分的湍流。</p>
 <h3 id="Back-Propagation">Back Propagation</h3>
 <p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=Ilg3gGewQ5U">Backpropagation, step-by-step | DL3</a></p>
-<img src="{1197B7EA-3F5B-40C9-8ADF-861B8AACBDC2}.png" srcset="/img/loading.gif" lazyload alt="" width="800">
+<img src="{1197B7EA-3F5B-40C9-8ADF-861B8AACBDC2}.png" srcset="/blog/img/loading.gif" lazyload alt="" width="800">
 <p>在卷积网络的前向传播中每一层的计算公式如下：</p>
 <p class="katex-block "><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msubsup><mi>z</mi><mi>d</mi><mrow><mo stretchy="false">(</mo><mi>l</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></msubsup><mo>=</mo><msup><mi>a</mi><mrow><mo stretchy="false">(</mo><mi>l</mi><mo stretchy="false">)</mo></mrow></msup><mo>⋆</mo><msubsup><mi>θ</mi><mi>d</mi><mrow><mo stretchy="false">(</mo><mi>l</mi><mo stretchy="false">)</mo></mrow></msubsup><mo>+</mo><msubsup><mi>b</mi><mi>d</mi><mrow><mo stretchy="false">(</mo><mi>l</mi><mo stretchy="false">)</mo></mrow></msubsup></mrow><annotation encoding="application/x-tex">z_d^{(l+1)} = a^{(l)}\star \theta^{(l)}_d + b^{(l)}_d
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.3461em;vertical-align:-0.3013em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.04398em;">z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0448em;"><span style="top:-2.3987em;margin-left:-0.044em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">d</span></span></span><span style="top:-3.2198em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span><span class="mbin mtight">+</span><span class="mord mtight">1</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3013em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.938em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.938em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span><span class="mclose mtight">)</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⋆</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.3461em;vertical-align:-0.3013em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02778em;">θ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0448em;"><span style="top:-2.3987em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">d</span></span></span><span style="top:-3.2198em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3013em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.3461em;vertical-align:-0.3013em;"></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0448em;"><span style="top:-2.3987em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">d</span></span></span><span style="top:-3.2198em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3013em;"><span></span></span></span></span></span></span></span></span></span></span></p>
@@ -567,7 +567,7 @@ CNN对上下文是敏感的，对于经常出现在一起的事物，CNN可以�
 <p><strong>胶囊网络（Capsule Network）</strong>：标准CNN的一个主要缺陷是<strong>未能有效保持物体部件之间的</strong>相对空间关系。虽然<strong>分类任务</strong>通常需要<strong>平移不变性</strong>（Invariance），但像<strong>细粒度识别</strong>等任务则更强调<strong>平移等变性</strong>（Equivariance）。胶囊网络通过引入<strong>胶囊（Capsule）这一概念，使用向量而非标量激活来表示实体，有效地保持了部件之间的层级和相对关系，从而实现了更好的等变性</strong>。</p>
 <h2 id="CNN-Architectures">CNN Architectures</h2>
 <h3 id="AlexNet">AlexNet</h3>
-<img src="{382F2347-B42F-46CB-83DB-F25DDE49A91E}.png" srcset="/img/loading.gif" lazyload alt="" width="800">
+<img src="{382F2347-B42F-46CB-83DB-F25DDE49A91E}.png" srcset="/blog/img/loading.gif" lazyload alt="" width="800">
 <ul>
 <li>一般会在输入层使用较大的卷积核，然后在后面的层使用较小的卷积核</li>
 <li>通道数随着网络逐渐增加然后减少</li>
@@ -604,19 +604,19 @@ CNN对上下文是敏感的，对于经常出现在一起的事物，CNN可以�
             <ul><li>传统CNN末尾通常使用全连接层（FC）进行分类，但全连接层参数量大，易过拟合。</li><li>全局池化可直接将特征图转换为通道维度的向量（如<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>×</mo><mn>1</mn><mo>×</mo><mn>1024</mn></mrow><annotation encoding="application/x-tex">1\times 1 \times1024</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1024</span></span></span></span> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span>  1024维向量），再接一个分类层，大幅减少参数。</li></ul>
           </div>
 <h4 id="GoogLeNet">GoogLeNet</h4>
-<img src="{43BF44F4-D211-4165-AE84-257E702582A0}.png" srcset="/img/loading.gif" lazyload alt="" width="700">
+<img src="{43BF44F4-D211-4165-AE84-257E702582A0}.png" srcset="/blog/img/loading.gif" lazyload alt="" width="700">
 <p>这是一个较为深的网络，删去了全连接层，参数量是较小的。</p>
 <ul>
 <li>引入Multi-passway，使用多路的卷积核来提取特征。采用了特征增广<em>Feature Augmentation</em>的方法。</li>
 <li>在特征图通道数目不一样的情况下，使用padding的方法。</li>
 </ul>
-<img src="{6F8AFF72-4C3D-4FAD-8FC9-90F7FED6E8B2}.png" srcset="/img/loading.gif" lazyload alt="" width="700">
+<img src="{6F8AFF72-4C3D-4FAD-8FC9-90F7FED6E8B2}.png" srcset="/blog/img/loading.gif" lazyload alt="" width="700">
 <ul>
 <li><strong>核心思想：</strong> 这个版本首次提出了 Inception 模块的概念，其特点是并行使用多种不同尺寸的卷积核（1x1, 3x3, 5x5）和一个池化层，然后将它们的输出特征图拼接（concatenate）在一起。</li>
 <li><strong>关键创新点（如图所示）：</strong> <strong>“瓶颈层”（Bottleneck layers）</strong> 的使用。在进行计算量较大的 3x3 和 5x5 卷积之前，先用一个 1x1 的卷积来减少特征图的通道数（即“降维”）。</li>
 <li><strong>带来的好处：</strong> 正如文字说明指出的，这个“瓶颈”设计极大地降低了计算复杂度。图中的例子显示，计算量从原始的 8.54 亿次操作降低到了 3.58 亿次，这使得构建更深的网络成为可能。</li>
 </ul>
-<img src="{39D210C3-7C1B-4913-AC78-12E71A8FD13B}.png" srcset="/img/loading.gif" lazyload alt="" width="700">
+<img src="{39D210C3-7C1B-4913-AC78-12E71A8FD13B}.png" srcset="/blog/img/loading.gif" lazyload alt="" width="700">
 <p>这个版本在 v1 的基础上引入了两项重要改进：</p>
 <ul>
 <li><strong>批量归一化 (Batch Normalization, BN)：</strong> 这是一项关键技术，被加入到模型中。BN 的作用是加速深度网络的训练过程，并使损失函数的曲面更平滑，从而让训练更稳定、更快速。</li>
@@ -627,7 +627,7 @@ CNN对上下文是敏感的，对于经常出现在一起的事物，CNN可以�
 </ol>
 </li>
 </ul>
-<img src="{E3B121C1-5782-4762-A983-042799DA4ED9}.png" srcset="/img/loading.gif" lazyload alt="" width="700">
+<img src="{E3B121C1-5782-4762-A983-042799DA4ED9}.png" srcset="/blog/img/loading.gif" lazyload alt="" width="700">
 <p>该版本通过更彻底的<strong>卷积分解 (Convolution Factorization)</strong> 来进一步优化网络结构：</p>
 <ul>
 <li><strong>非对称卷积 (Asymmetric Convolutions)：</strong> 将一个 <code>n x n</code> 的卷积分解为一个 <code>1 x n</code> 卷积和一个 <code>n x 1</code> 卷积。例如，一个 3x3 的卷积可以被一个 1x3 的卷积和一个 3x1 的卷积替代。</li>
@@ -670,16 +670,16 @@ CNN对上下文是敏感的，对于经常出现在一起的事物，CNN可以�
 <li><strong>Highway Network</strong>：通过门控动态调节跳跃连接的权重，更灵活地控制信息流。</li>
 </ul>
 <h4 id="ResNet">ResNet</h4>
-<img src="{6767A6D4-59B6-4B62-9FE9-427D009BB837}.png" srcset="/img/loading.gif" lazyload alt="" width="800">
+<img src="{6767A6D4-59B6-4B62-9FE9-427D009BB837}.png" srcset="/blog/img/loading.gif" lazyload alt="" width="800">
 <ul>
 <li>56层的模型比20层的模型效果更差，既然如此，先将20层的模型训练好，然后再增加36层的<em>identity</em>网络，之后再训练整个网络。发现这样的操作的效果反而更差。得出的结论是56层的网络更加难以训练，网络的拟和能力不足。<strong>平坦的网络很难拟和</strong></li>
 <li>残差是更加容易拟和的。</li>
 <li>继续将这些残差网络堆叠在一起，可以得到一个更深的网络。</li>
 <li>卷积、池化是算子<em>operator</em>，残差是一个块<em>block</em>，网络是一个层<em>layer</em></li>
 </ul>
-<img src="{8F67BE27-E8CA-4921-99B2-C57FFFAE5E7B}.png" srcset="/img/loading.gif" lazyload alt="" width="800">
-<img src="{681C5361-F2ED-427F-86C2-48C9EC68AADF}.png" srcset="/img/loading.gif" lazyload alt="" width="800">
-<img src="{5DE8620F-D5FB-4E82-96D7-0E03CCCCAF82}.png" srcset="/img/loading.gif" lazyload alt="" width="800">
+<img src="{8F67BE27-E8CA-4921-99B2-C57FFFAE5E7B}.png" srcset="/blog/img/loading.gif" lazyload alt="" width="800">
+<img src="{681C5361-F2ED-427F-86C2-48C9EC68AADF}.png" srcset="/blog/img/loading.gif" lazyload alt="" width="800">
+<img src="{5DE8620F-D5FB-4E82-96D7-0E03CCCCAF82}.png" srcset="/blog/img/loading.gif" lazyload alt="" width="800">
 对于网络会有多个维度进行评价：
 - 准确率top-1、top-5准确率
 - VGG网络参数量很大，但是由于是平坦的网络，所以有一定的计算整齐度。在网络有较多的分叉时，计算整齐度会变差。较为整齐的网络计算是较快的。
@@ -706,9 +706,9 @@ CNN对上下文是敏感的，对于经常出现在一起的事物，CNN可以�
 <li>令通道数等于分组数目<em>channelwise</em> or <em>depthwise</em></li>
 </ul>
 <p>上述两个算子是轻量化网络的基础。</p>
-<img src="Pasted image 20250316132626.png" srcset="/img/loading.gif" lazyload alt="" width="800">
+<img src="Pasted image 20250316132626.png" srcset="/blog/img/loading.gif" lazyload alt="" width="800">
 <p><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2201.03545">[2201.03545] A ConvNet for the 2020s</a></p>
-<img src="Pasted image 20250316134751.png" srcset="/img/loading.gif" lazyload alt="" width="800">
+<img src="Pasted image 20250316134751.png" srcset="/blog/img/loading.gif" lazyload alt="" width="800">
 <p>宏观设计：<strong>减少空间尺寸的衰减有利于学习不同的特征</strong>。</p>
 
                 
@@ -728,7 +728,7 @@ CNN对上下文是敏感的，对于经常出现在一起的事物，CNN可以�
     
       <span class="category-chain">
         
-  <a href="/categories/Deep-Learning/" class="category-chain-item">Deep Learning</a>
+  <a href="/blog/categories/Deep-Learning/" class="category-chain-item">Deep Learning</a>
   
   
 
@@ -743,9 +743,9 @@ CNN对上下文是敏感的，对于经常出现在一起的事物，CNN可以�
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Deep-Learning/" class="print-no-link">#Deep Learning</a>
+        <a href="/blog/tags/Deep-Learning/" class="print-no-link">#Deep Learning</a>
       
-        <a href="/tags/CNN/" class="print-no-link">#CNN</a>
+        <a href="/blog/tags/CNN/" class="print-no-link">#CNN</a>
       
     </div>
   
@@ -758,7 +758,7 @@ CNN对上下文是敏感的，对于经常出现在一起的事物，CNN可以�
   <div class="license-box my-3">
     <div class="license-title">
       <div>DL Note-3 CNN</div>
-      <div>https://yima-gu.github.io/2025/07/10/Deep Learning/DL Note-3 CNN/</div>
+      <div>https://yima-gu.github.io/blog/2025/07/10/Deep Learning/DL Note-3 CNN/</div>
     </div>
     <div class="license-meta">
       
@@ -814,7 +814,7 @@ CNN对上下文是敏感的，对于经常出现在一起的事物，CNN可以�
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/07/19/ML_Lee/AI%20Agent/" title="AI Agent Notes">
+                      <a href="/blog/2025/07/19/ML_Lee/AI%20Agent/" title="AI Agent Notes">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">AI Agent Notes</span>
                         <span class="visible-mobile">上一篇</span>
@@ -824,7 +824,7 @@ CNN对上下文是敏感的，对于经常出现在一起的事物，CNN可以�
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/06/28/Deep%20Learning/DL%20Note-2%20MLP/" title="DL Note-2 MLP">
+                      <a href="/blog/2025/06/28/Deep%20Learning/DL%20Note-2%20MLP/" title="DL Note-2 MLP">
                         <span class="hidden-mobile">DL Note-2 MLP</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
@@ -843,7 +843,7 @@ CNN对上下文是敏感的，对于经常出现在一起的事物，CNN可以�
     <div id="giscus" class="giscus"></div>
     <script type="text/javascript">
       Fluid.utils.loadComments('#giscus', function() {
-        var options = {"repo":"Yima-Gu/Yima-Gu.github.io","repo-id":"R_kgDOPz-yyQ","category":"General","category-id":"DIC_kwDOPz-yyc4CvvD2","theme-light":"preferred_color_scheme","theme-dark":"preferred_color_scheme","mapping":"pathname","reactions-enabled":1,"emit-metadata":0,"input-position":"bottom","lang":"zh-CN"};
+        var options = {"repo":"Yima-Gu/blog","repo-id":"R_kgDOPz-yyQ","category":"General","category-id":"DIC_kwDOPz-yyc4CvvD2","theme-light":"preferred_color_scheme","theme-dark":"preferred_color_scheme","mapping":"pathname","reactions-enabled":1,"emit-metadata":0,"input-position":"bottom","lang":"zh-CN"};
         var attributes = {};
         for (let option in options) {
           if (!option.startsWith('theme-')) {
@@ -1028,8 +1028,8 @@ CNN对上下文是敏感的，对于经常出现在一起的事物，CNN可以�
 
 <script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
 <script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
+<script  src="/blog/js/events.js" ></script>
+<script  src="/blog/js/plugins.js" ></script>
 
 
   <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
@@ -1051,7 +1051,7 @@ CNN对上下文是敏感的，对于经常出现在一起的事物，CNN可以�
 
 
   
-    <script  src="/js/img-lazyload.js" ></script>
+    <script  src="/blog/js/img-lazyload.js" ></script>
   
 
 
@@ -1150,7 +1150,7 @@ CNN对上下文是敏感的，对于经常出现在一起的事物，CNN可以�
 
   <script>Fluid.plugins.imageCaption();</script>
 
-  <script  src="/js/local-search.js" ></script>
+  <script  src="/blog/js/local-search.js" ></script>
 
   <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
@@ -1158,13 +1158,13 @@ CNN对上下文是敏感的，对于经常出现在一起的事物，CNN可以�
 
 
   
-<script src="/js/mermaid-init.js"></script>
+<script src="/blog/js/mermaid-init.js"></script>
 
 
 
 <!-- 主题的启动项，将它保持在最底部 -->
 <!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
+<script  src="/blog/js/boot.js" ></script>
 
 
   

@@ -8,8 +8,8 @@
 <head>
   <meta charset="UTF-8">
 
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/my_icon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/blog/img/fluid.png">
+  <link rel="icon" href="/blog/img/my_icon.png">
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
@@ -22,45 +22,45 @@
     <meta name="description" content="1. 幂集合、关系、半群的概念">
 <meta property="og:type" content="article">
 <meta property="og:title" content="形式语言与自动机">
-<meta property="og:url" content="https://yima-gu.github.io/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/index.html">
+<meta property="og:url" content="https://yima-gu.github.io/blog/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/index.html">
 <meta property="og:site_name" content="Yima Gu&#39;s Blog">
 <meta property="og:description" content="1. 幂集合、关系、半群的概念">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://yima-gu.github.io/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/%7BC4F358E7-398E-450B-9F33-7A2A53EFF0B2%7D.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/%7B4F65307D-3224-449C-82A8-CBCD113B0C58%7D.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/%7B3AA90FC6-EE95-4C81-8BB9-D6273AA106D5%7D.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102102631.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102102650.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102102737.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102102800.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102102822.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102102935.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102102954.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102103014.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102103042.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102103107.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102103131.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102103201.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102103226.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102103258.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102103438.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020250423120224.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/%7B62B906C1-E483-4BF8-A483-0A22249686E2%7D.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/%7BA81D876D-1560-4B55-B986-BAA75F6B7B60%7D.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102103606.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102103737.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/%7B59B5FF53-7D04-4B4C-BF1A-4F166BA990D3%7D.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102103810.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020250521101608.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/%7BA4FB9732-ABFA-4F9D-A032-A2562CB7BE9C%7D.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/%7B331AC037-03C0-4049-B5F5-382FADD920A6%7D.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/%7BC4F358E7-398E-450B-9F33-7A2A53EFF0B2%7D.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/%7B4F65307D-3224-449C-82A8-CBCD113B0C58%7D.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/%7B3AA90FC6-EE95-4C81-8BB9-D6273AA106D5%7D.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102102631.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102102650.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102102737.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102102800.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102102822.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102102935.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102102954.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102103014.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102103042.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102103107.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102103131.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102103201.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102103226.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102103258.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102103438.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020250423120224.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/%7B62B906C1-E483-4BF8-A483-0A22249686E2%7D.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/%7BA81D876D-1560-4B55-B986-BAA75F6B7B60%7D.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102103606.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102103737.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/%7B59B5FF53-7D04-4B4C-BF1A-4F166BA990D3%7D.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020251102103810.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/Pasted%20image%2020250521101608.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/%7BA4FB9732-ABFA-4F9D-A032-A2562CB7BE9C%7D.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/%7B331AC037-03C0-4049-B5F5-382FADD920A6%7D.png">
 <meta property="article:published_time" content="2025-06-15T04:45:00.000Z">
-<meta property="article:modified_time" content="2026-07-01T11:38:22.789Z">
+<meta property="article:modified_time" content="2026-09-23T08:10:17.381Z">
 <meta property="article:author" content="Yima Gu">
 <meta property="article:tag" content="Automata">
 <meta property="article:tag" content="Formal Language">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://yima-gu.github.io/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/%7BC4F358E7-398E-450B-9F33-7A2A53EFF0B2%7D.png">
+<meta name="twitter:image" content="https://yima-gu.github.io/blog/2025/06/15/Formal_Language&Automata/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA/%7BC4F358E7-398E-450B-9F33-7A2A53EFF0B2%7D.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -92,33 +92,33 @@
 <link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
 
 
-<link  rel="stylesheet" href="/css/main.css" />
+<link  rel="stylesheet" href="/blog/css/main.css" />
 
 
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  <link id="highlight-css" rel="stylesheet" href="/blog/css/highlight.css" />
   
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+    <link id="highlight-css-dark" rel="stylesheet" href="/blog/css/highlight-dark.css" />
   
 
 
 
   
-<link rel="stylesheet" href="/css/custom.css">
+<link rel="stylesheet" href="/blog/css/custom.css">
 
 
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"yima-gu.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":"G-JFL0C5NV2V","tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"yima-gu.github.io","root":"/blog/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":"G-JFL0C5NV2V","tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/blog/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
       Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
     }
   </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
+  <script  src="/blog/js/utils.js" ></script>
+  <script  src="/blog/js/color-schema.js" ></script>
   
 
   
@@ -134,7 +134,7 @@
 
 
   
-<meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/atom.xml" title="Yima Gu's Blog" type="application/atom+xml">
+<meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/blog/atom.xml" title="Yima Gu's Blog" type="application/atom+xml">
 </head>
 
 
@@ -147,7 +147,7 @@
 <div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand" href="/blog/">
       <strong>Yima Gu&#39;s Blog</strong>
     </a>
 
@@ -166,7 +166,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/" target="_self">
+              <a class="nav-link" href="/blog/" target="_self">
                 <i class="iconfont icon-home-fill"></i>
                 <span>首页</span>
               </a>
@@ -178,7 +178,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/series/" target="_self">
+              <a class="nav-link" href="/blog/series/" target="_self">
                 <i class="iconfont icon-books-fill"></i>
                 <span>系列笔记</span>
               </a>
@@ -190,7 +190,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/archives/" target="_self">
+              <a class="nav-link" href="/blog/archives/" target="_self">
                 <i class="iconfont icon-archive-fill"></i>
                 <span>归档</span>
               </a>
@@ -202,7 +202,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/categories/" target="_self">
+              <a class="nav-link" href="/blog/categories/" target="_self">
                 <i class="iconfont icon-category-fill"></i>
                 <span>分类</span>
               </a>
@@ -214,7 +214,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/tags/" target="_self">
+              <a class="nav-link" href="/blog/tags/" target="_self">
                 <i class="iconfont icon-tags-fill"></i>
                 <span>标签</span>
               </a>
@@ -226,7 +226,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/about/" target="_self">
+              <a class="nav-link" href="/blog/about/" target="_self">
                 <i class="iconfont icon-user-fill"></i>
                 <span>关于</span>
               </a>
@@ -256,7 +256,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/bg/post.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('/blog/img/bg/post.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -372,7 +372,7 @@
 <ul>
 <li>
 <p>同构映射：<br>
-<img src="%7BC4F358E7-398E-450B-9F33-7A2A53EFF0B2%7D.png" srcset="/img/loading.gif" lazyload alt=""></p>
+<img src="%7BC4F358E7-398E-450B-9F33-7A2A53EFF0B2%7D.png" srcset="/blog/img/loading.gif" lazyload alt=""></p>
 <ul>
 <li>
 <p>定义：<br>
@@ -400,7 +400,7 @@
 <ul>
 <li>
 <p>定义：<br>
-<img src="%7B4F65307D-3224-449C-82A8-CBCD113B0C58%7D.png" srcset="/img/loading.gif" lazyload alt=""><br>
+<img src="%7B4F65307D-3224-449C-82A8-CBCD113B0C58%7D.png" srcset="/blog/img/loading.gif" lazyload alt=""><br>
 给定两个半群(S, ∗)和(T, ◦)，一个函数f：S→T被称为从半群(S, ∗)到半群(T, ◦)的同态映射。<br>
 同态映射的定义要求对于S中的<strong>所有</strong>元素a和b，满足<strong>f(a∗b) = f(a) ◦ f(b)</strong>。<br>
 换句话说，同态映射保持了半群上的运算结构，即在映射下，两个半群中的元素进行运算后，结果的映射等于各自元素的映射再进行相应的运算。</p>
@@ -418,7 +418,7 @@
 <ul>
 <li>存在一个元素𝑒 ∈ S，对于S中的任意元素a，都有𝑒 ∗ a = a ∗ 𝑒 = a 这个元素𝑒被称为单位元或幺元。</li>
 <li>对于S中的任意元素a，存在一个元素b ∈ S，使得a ∗ b = b ∗ a = 𝑒 这个元素b被称为a的逆元，记作a⁻¹。</li>
-<li><img src="%7B3AA90FC6-EE95-4C81-8BB9-D6273AA106D5%7D.png" srcset="/img/loading.gif" lazyload alt=""></li>
+<li><img src="%7B3AA90FC6-EE95-4C81-8BB9-D6273AA106D5%7D.png" srcset="/blog/img/loading.gif" lazyload alt=""></li>
 </ul>
 <h4 id="二-图">二. 图</h4>
 <ul>
@@ -1138,9 +1138,9 @@ L(a)&amp;=\{a\}
 <h4 id="语法分析树">语法分析树</h4>
 <p>![](Pasted image 20251102102615.png)</p>
 <p>注意在语法分析树的叶结点上可以是终结符也可以是变量，，将每个叶结点按照从左到右的次序连接起来得到一个<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>V</mi><mo>∪</mo><mi>T</mi><msup><mo stretchy="false">)</mo><mo>∗</mo></msup></mrow><annotation encoding="application/x-tex">(V\cup T)^*</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∪</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6887em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">∗</span></span></span></span></span></span></span></span></span></span></span>的字符串成为语法分析树的产物。</p>
-<img src="Pasted image 20251102102631.png" srcset="/img/loading.gif" lazyload alt="" width="600">
+<img src="Pasted image 20251102102631.png" srcset="/blog/img/loading.gif" lazyload alt="" width="600">
 <h4 id="CFL">CFL</h4>
-<img src="Pasted image 20251102102650.png" srcset="/img/loading.gif" lazyload alt="" width="600">
+<img src="Pasted image 20251102102650.png" srcset="/blog/img/loading.gif" lazyload alt="" width="600">
 <h4 id="三-文法二义性">三. 文法二义性</h4>
 <ul>
 <li>
@@ -1203,7 +1203,7 @@ L(a)&amp;=\{a\}
 <ul>
 <li>例：构造0和1个数相等的语言</li>
 </ul>
-<img src="Pasted image 20251102102737.png" srcset="/img/loading.gif" lazyload alt="" width="700">
+<img src="Pasted image 20251102102737.png" srcset="/blog/img/loading.gif" lazyload alt="" width="700">
 <p>构造方法不仅有上面一种</p>
 <ul>
 <li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>→</mo><mn>0</mn><mi>B</mi><mi mathvariant="normal">∣</mi><mn>1</mn><mi>A</mi><mi mathvariant="normal">∣</mi><mi>ε</mi><mo separator="true">,</mo><mi>B</mi><mo>→</mo><mn>1</mn><mi>S</mi><mi mathvariant="normal">∣</mi><mn>0</mn><mi>B</mi><mi>B</mi><mo separator="true">,</mo><mi>A</mi><mo>→</mo><mn>0</mn><mi>S</mi><mi mathvariant="normal">∣</mi><mn>1</mn><mi>A</mi><mi>A</mi></mrow><annotation encoding="application/x-tex">S \rightarrow 0B|1A|\varepsilon, B\rightarrow 1S|0BB, A\rightarrow 0S|1AA</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">0</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord">∣1</span><span class="mord mathnormal">A</span><span class="mord">∣</span><span class="mord mathnormal">ε</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord">∣0</span><span class="mord mathnormal" style="margin-right:0.05017em;">BB</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">0</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord">∣1</span><span class="mord mathnormal">AA</span></span></span></span></li>
@@ -1215,11 +1215,11 @@ L(a)&amp;=\{a\}
 </ul>
 <p>例：构造满足0的数量是1的数量两倍的CFG<br>
 类似的，尝试构造：<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>→</mo><mn>0</mn><mi>S</mi><mn>0</mn><mi>S</mi><mn>1</mn><mi>S</mi><mi mathvariant="normal">∣</mi><mn>0</mn><mi>S</mi><mn>1</mn><mi>S</mi><mn>0</mn><mi>S</mi><mi mathvariant="normal">∣</mi><mn>1</mn><mi>S</mi><mn>0</mn><mi>S</mi><mn>0</mn><mi>S</mi><mi mathvariant="normal">∣</mi><mi>ε</mi></mrow><annotation encoding="application/x-tex">S\rightarrow0S0S1S|0S1S0S|1S0S0S|\varepsilon</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">0</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord">0</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord">1</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord">∣0</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord">1</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord">0</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord">∣1</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord">0</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord">0</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord">∣</span><span class="mord mathnormal">ε</span></span></span></span><br>
-<img src="Pasted image 20251102102800.png" srcset="/img/loading.gif" lazyload alt="" width="600"><br>
-<img src="Pasted image 20251102102822.png" srcset="/img/loading.gif" lazyload alt="" width="600"><br>
-<img src="Pasted image 20251102102935.png" srcset="/img/loading.gif" lazyload alt="" width="600"><br>
-<img src="Pasted image 20251102102954.png" srcset="/img/loading.gif" lazyload alt="" width="600"><br>
-<img src="Pasted image 20251102103014.png" srcset="/img/loading.gif" lazyload alt="" width="600"></p>
+<img src="Pasted image 20251102102800.png" srcset="/blog/img/loading.gif" lazyload alt="" width="600"><br>
+<img src="Pasted image 20251102102822.png" srcset="/blog/img/loading.gif" lazyload alt="" width="600"><br>
+<img src="Pasted image 20251102102935.png" srcset="/blog/img/loading.gif" lazyload alt="" width="600"><br>
+<img src="Pasted image 20251102102954.png" srcset="/blog/img/loading.gif" lazyload alt="" width="600"><br>
+<img src="Pasted image 20251102103014.png" srcset="/blog/img/loading.gif" lazyload alt="" width="600"></p>
 <hr>
 <h2 id="第九讲：PDA">第九讲：PDA</h2>
 <h4 id="一-PDA的介绍">一. PDA的介绍</h4>
@@ -1229,7 +1229,7 @@ L(a)&amp;=\{a\}
 <li><strong>栈为空时不允许进行迁移，停机！此时向栈中输入<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi></mrow><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">ε</span></span></span></span>也是不允许的</strong></li>
 <li>分确定PDA：NPDA</li>
 <li>栈里面一个单元只能放入一个字符，一次只能<strong>弹出一个字符</strong>，可以一次压入多个字符<br>
-<img src="Pasted image 20251102103042.png" srcset="/img/loading.gif" lazyload alt="" width="500"><br>
+<img src="Pasted image 20251102103042.png" srcset="/blog/img/loading.gif" lazyload alt="" width="500"><br>
 NPDA允许再相同的输入和栈顶符号时有多个状态转移，也允许<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi></mrow><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">ε</span></span></span></span>转移</li>
 </ul>
 <h4 id="二-PDA的定义">二. PDA的定义</h4>
@@ -1237,11 +1237,11 @@ NPDA允许再相同的输入和栈顶符号时有多个状态转移，也允许<
 <li>
 <p>（终态型的）PDA为七元组：<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>=</mo><mo stretchy="false">(</mo><mi>Q</mi><mo separator="true">,</mo><mi mathvariant="normal">Σ</mi><mo separator="true">,</mo><mi mathvariant="normal">Γ</mi><mo separator="true">,</mo><mi>δ</mi><mo separator="true">,</mo><msub><mi>q</mi><mn>0</mn></msub><mo separator="true">,</mo><msub><mi>Z</mi><mn>0</mn></msub><mo separator="true">,</mo><mi>F</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P=(Q,\Sigma,\Gamma,\delta,q_0,Z_0,F)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">Q</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">Σ</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">Γ</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">Z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mclose">)</span></span></span></span><br>
 有限状态集合、有限输入字母表、有限栈字符、转移函数、一个初始状态、一个栈初始符号、终态集合<br>
-<img src="Pasted image 20251102103107.png" srcset="/img/loading.gif" lazyload alt="" width="700"></p>
+<img src="Pasted image 20251102103107.png" srcset="/blog/img/loading.gif" lazyload alt="" width="700"></p>
 </li>
 <li>
 <p>空栈型PDA为六元组：<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>=</mo><mo stretchy="false">(</mo><mi>Q</mi><mo separator="true">,</mo><mi mathvariant="normal">Σ</mi><mo separator="true">,</mo><mi mathvariant="normal">Γ</mi><mo separator="true">,</mo><mi>δ</mi><mo separator="true">,</mo><msub><mi>q</mi><mn>0</mn></msub><mo separator="true">,</mo><msub><mi>Z</mi><mn>0</mn></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P=(Q,\Sigma,\Gamma,\delta,q_0,Z_0)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">Q</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">Σ</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">Γ</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">Z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span><br>
-<img src="Pasted image 20251102103131.png" srcset="/img/loading.gif" lazyload alt="" width="700"></p>
+<img src="Pasted image 20251102103131.png" srcset="/blog/img/loading.gif" lazyload alt="" width="700"></p>
 </li>
 <li>
 <p>约定：PDA即为NPDA，PDA即为终态型PDA</p>
@@ -1254,10 +1254,10 @@ NPDA允许再相同的输入和栈顶符号时有多个状态转移，也允许<
 </li>
 <li>
 <p>由于栈的特性，上述自动机在表达字符的个数、反转方面上有优势<br>
-<img src="Pasted image 20251102103201.png" srcset="/img/loading.gif" lazyload alt="" width="500"><br>
-<img src="Pasted image 20251102103226.png" srcset="/img/loading.gif" lazyload alt="" width="500"><br>
+<img src="Pasted image 20251102103201.png" srcset="/blog/img/loading.gif" lazyload alt="" width="500"><br>
+<img src="Pasted image 20251102103226.png" srcset="/blog/img/loading.gif" lazyload alt="" width="500"><br>
 上述NPDA在构造时，使用这个结论<br>
-<img src="Pasted image 20251102103258.png" srcset="/img/loading.gif" lazyload alt="" width="600"></p>
+<img src="Pasted image 20251102103258.png" srcset="/blog/img/loading.gif" lazyload alt="" width="600"></p>
 </li>
 </ul>
 <h4 id="三-PDA的即时描述">三. PDA的即时描述</h4>
@@ -1512,7 +1512,7 @@ NPDA允许再相同的输入和栈顶符号时有多个状态转移，也允许<
 </li>
 </ul>
 <h4 id="二-DPDA语言与其他语言的关系">二. DPDA语言与其他语言的关系</h4>
-<img src="Pasted image 20251102103438.png" srcset="/img/loading.gif" lazyload alt="" width="600">
+<img src="Pasted image 20251102103438.png" srcset="/blog/img/loading.gif" lazyload alt="" width="600">
 <ul>
 <li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>D</mi><mi>P</mi><mi>D</mi><mi>A</mi><mtext>的语言</mtext><mo stretchy="false">}</mo><mo>⊂</mo><mo stretchy="false">{</mo><mi>C</mi><mi>F</mi><mi>L</mi><mo stretchy="false">(</mo><mi>N</mi><mi>P</mi><mi>D</mi><mi>A</mi><mo stretchy="false">)</mo><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{DPDA\text{的语言}\}\subset\{CFL(NPDA)\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mord mathnormal">A</span><span class="mord text"><span class="mord cjk_fallback">的语言</span></span><span class="mclose">}</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⊂</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathnormal" style="margin-right:0.13889em;">CF</span><span class="mord mathnormal">L</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.13889em;">NP</span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mord mathnormal">A</span><span class="mclose">)}</span></span></span></span></li>
 <li>定理：若L是正则语言，则存在DPDA P，使得L(P)=L</li>
@@ -1626,7 +1626,7 @@ NPDA允许再相同的输入和栈顶符号时有多个状态转移，也允许<
 <p class="katex-block "><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>L</mi><mo stretchy="false">(</mo><msub><mi>G</mi><mn>1</mn></msub><mo stretchy="false">)</mo><mo>=</mo><mi>L</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">{</mo><mi>ε</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">L(G_1) = L(G) - \{\varepsilon\}
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">L</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">G</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">L</span><span class="mopen">(</span><span class="mord mathnormal">G</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathnormal">ε</span><span class="mclose">}</span></span></span></span></span></p>
 <p>例子：<br>
-<img src="Pasted image 20250423120224.png" srcset="/img/loading.gif" lazyload alt="" width="500"></p>
+<img src="Pasted image 20250423120224.png" srcset="/blog/img/loading.gif" lazyload alt="" width="500"></p>
 <h4 id="七-消去单一产生式">七. 消去单一产生式</h4>
 <ul>
 <li>
@@ -1684,8 +1684,8 @@ NPDA允许再相同的输入和栈顶符号时有多个状态转移，也允许<
 <h2 id="第十一讲：上下文无关语言的性质">第十一讲：上下文无关语言的性质</h2>
 <h4 id="一-CFL的必要条件">一. CFL的必要条件</h4>
 <h4 id="二-CFL的泵引理">二.CFL的泵引理</h4>
-<p><img src="%7B62B906C1-E483-4BF8-A483-0A22249686E2%7D.png" srcset="/img/loading.gif" lazyload alt=""><br>
-<img src="%7BA81D876D-1560-4B55-B986-BAA75F6B7B60%7D.png" srcset="/img/loading.gif" lazyload alt=""></p>
+<p><img src="%7B62B906C1-E483-4BF8-A483-0A22249686E2%7D.png" srcset="/blog/img/loading.gif" lazyload alt=""><br>
+<img src="%7BA81D876D-1560-4B55-B986-BAA75F6B7B60%7D.png" srcset="/blog/img/loading.gif" lazyload alt=""></p>
 <ul>
 <li>对任意的正整数</li>
 <li>寻找一个字符串的长度大于等于n</li>
@@ -1758,7 +1758,7 @@ NPDA允许再相同的输入和栈顶符号时有多个状态转移，也允许<
 </li>
 </ol>
 <h5 id="不可判定问题">不可判定问题</h5>
-<img src="Pasted image 20251102103606.png" srcset="/img/loading.gif" lazyload alt="" width="500">
+<img src="Pasted image 20251102103606.png" srcset="/blog/img/loading.gif" lazyload alt="" width="500">
 <h2 id="第十二讲：Turning机（图灵机）">第十二讲：Turning机（图灵机）</h2>
 <h4 id="一-图灵机的介绍">一. 图灵机的介绍</h4>
 <ul>
@@ -1910,7 +1910,7 @@ NPDA允许再相同的输入和栈顶符号时有多个状态转移，也允许<
 </ul>
 </li>
 <li>
-<img src="Pasted image 20251102103737.png" srcset="/img/loading.gif" lazyload alt="" width="500">
+<img src="Pasted image 20251102103737.png" srcset="/blog/img/loading.gif" lazyload alt="" width="500">
 </li>
 </ul>
 <h4 id="九-图灵机与其他自动机">九. 图灵机与其他自动机</h4>
@@ -1926,7 +1926,7 @@ NPDA允许再相同的输入和栈顶符号时有多个状态转移，也允许<
 </li>
 <li>计数器机
 <ul>
-<li><img src="%7B59B5FF53-7D04-4B4C-BF1A-4F166BA990D3%7D.png" srcset="/img/loading.gif" lazyload alt=""></li>
+<li><img src="%7B59B5FF53-7D04-4B4C-BF1A-4F166BA990D3%7D.png" srcset="/blog/img/loading.gif" lazyload alt=""></li>
 <li>可以证明：
 <ul>
 <li>具有一个计数器的计数器机的语言接受能力相当于DPDA</li>
@@ -1952,8 +1952,8 @@ NPDA允许再相同的输入和栈顶符号时有多个状态转移，也允许<
 </ul>
 <h2 id="第十三讲：不可判定问题">第十三讲：不可判定问题</h2>
 <h4 id="一、图灵机的编码">一、图灵机的编码</h4>
-<img src="Pasted image 20251102103810.png" srcset="/img/loading.gif" lazyload alt="" width="500">
-<img src="Pasted image 20250521101608.png" srcset="/img/loading.gif" lazyload alt="" width="500">
+<img src="Pasted image 20251102103810.png" srcset="/blog/img/loading.gif" lazyload alt="" width="500">
+<img src="Pasted image 20250521101608.png" srcset="/blog/img/loading.gif" lazyload alt="" width="500">
 <p>对于一个图灵机可以使用多种方式进行编码。编码对应的二进制串采用<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>w</mi></mrow><annotation encoding="application/x-tex">1w</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span><span class="mord mathnormal" style="margin-right:0.02691em;">w</span></span></span></span>编码，即在<strong>输入字符串</strong>前面加上一个<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span>，用编码的字符串<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>w</mi></mrow><annotation encoding="application/x-tex">1w</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span><span class="mord mathnormal" style="margin-right:0.02691em;">w</span></span></span></span>来计算是第几个字符串。</p>
 <h4 id="二、对角线语言与通用语言">二、对角线语言与通用语言</h4>
 <ul>
@@ -2059,13 +2059,13 @@ NPDA允许再相同的输入和栈顶符号时有多个状态转移，也允许<
 <li><strong>Rice定理：递归可枚举语言的每一个非平凡性质都是不可判定的</strong> ^52defa
 <ul>
 <li>指的是<strong>满足性质P的所有语言构成的集合</strong>不可判定，或其对应的问题：任给一个<strong>语言</strong>、它满足性质P吗？的问题不可判定。</li>
-<li>归约的过程为，将<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mi>u</mi></msub></mrow><annotation encoding="application/x-tex">L_u</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">u</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>的实例归约到图灵机接受的语言是否满足性质<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>P</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup></mrow><annotation encoding="application/x-tex">P&#x27;</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7519em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span></span></span></span>。只需要从输入<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>M</mi><mo separator="true">,</mo><mi>w</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(M,w)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="mclose">)</span></span></span></span>构造<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>M</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup></mrow><annotation encoding="application/x-tex">M&#x27;</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7519em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span></span></span></span>即可<img src="%7BA4FB9732-ABFA-4F9D-A032-A2562CB7BE9C%7D.png" srcset="/img/loading.gif" lazyload alt=""></li>
+<li>归约的过程为，将<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mi>u</mi></msub></mrow><annotation encoding="application/x-tex">L_u</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">u</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>的实例归约到图灵机接受的语言是否满足性质<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>P</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup></mrow><annotation encoding="application/x-tex">P&#x27;</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7519em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span></span></span></span>。只需要从输入<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>M</mi><mo separator="true">,</mo><mi>w</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(M,w)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="mclose">)</span></span></span></span>构造<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>M</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup></mrow><annotation encoding="application/x-tex">M&#x27;</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7519em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span></span></span></span>即可<img src="%7BA4FB9732-ABFA-4F9D-A032-A2562CB7BE9C%7D.png" srcset="/blog/img/loading.gif" lazyload alt=""></li>
 </ul>
 </li>
 <li>Post对应问题：
 <ul>
 <li>从两个长度相同的列表中选择相同顺序的项，拼接后是否能得到两个完全相同的字符串？<br>
-<img src="%7B331AC037-03C0-4049-B5F5-382FADD920A6%7D.png" srcset="/img/loading.gif" lazyload alt=""></li>
+<img src="%7B331AC037-03C0-4049-B5F5-382FADD920A6%7D.png" srcset="/blog/img/loading.gif" lazyload alt=""></li>
 <li>Post对应问题是不可判定的</li>
 </ul>
 </li>
@@ -2088,7 +2088,7 @@ NPDA允许再相同的输入和栈顶符号时有多个状态转移，也允许<
     
       <span class="category-chain">
         
-  <a href="/categories/Formal-Language-Automata/" class="category-chain-item">Formal Language &amp; Automata</a>
+  <a href="/blog/categories/Formal-Language-Automata/" class="category-chain-item">Formal Language &amp; Automata</a>
   
   
 
@@ -2103,9 +2103,9 @@ NPDA允许再相同的输入和栈顶符号时有多个状态转移，也允许<
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Formal-Language/" class="print-no-link">#Formal Language</a>
+        <a href="/blog/tags/Formal-Language/" class="print-no-link">#Formal Language</a>
       
-        <a href="/tags/Automata/" class="print-no-link">#Automata</a>
+        <a href="/blog/tags/Automata/" class="print-no-link">#Automata</a>
       
     </div>
   
@@ -2118,7 +2118,7 @@ NPDA允许再相同的输入和栈顶符号时有多个状态转移，也允许<
   <div class="license-box my-3">
     <div class="license-title">
       <div>形式语言与自动机</div>
-      <div>https://yima-gu.github.io/2025/06/15/Formal_Language&amp;Automata/形式语言与自动机/</div>
+      <div>https://yima-gu.github.io/blog/2025/06/15/Formal_Language&amp;Automata/形式语言与自动机/</div>
     </div>
     <div class="license-meta">
       
@@ -2174,7 +2174,7 @@ NPDA允许再相同的输入和栈顶符号时有多个状态转移，也允许<
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/06/15/algorithm/Introduction%20to%20Algorithm-01-Sorting/" title="Introduction to Algorithm-01-Sorting">
+                      <a href="/blog/2025/06/15/algorithm/Introduction%20to%20Algorithm-01-Sorting/" title="Introduction to Algorithm-01-Sorting">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">Introduction to Algorithm-01-Sorting</span>
                         <span class="visible-mobile">上一篇</span>
@@ -2197,7 +2197,7 @@ NPDA允许再相同的输入和栈顶符号时有多个状态转移，也允许<
     <div id="giscus" class="giscus"></div>
     <script type="text/javascript">
       Fluid.utils.loadComments('#giscus', function() {
-        var options = {"repo":"Yima-Gu/Yima-Gu.github.io","repo-id":"R_kgDOPz-yyQ","category":"General","category-id":"DIC_kwDOPz-yyc4CvvD2","theme-light":"preferred_color_scheme","theme-dark":"preferred_color_scheme","mapping":"pathname","reactions-enabled":1,"emit-metadata":0,"input-position":"bottom","lang":"zh-CN"};
+        var options = {"repo":"Yima-Gu/blog","repo-id":"R_kgDOPz-yyQ","category":"General","category-id":"DIC_kwDOPz-yyc4CvvD2","theme-light":"preferred_color_scheme","theme-dark":"preferred_color_scheme","mapping":"pathname","reactions-enabled":1,"emit-metadata":0,"input-position":"bottom","lang":"zh-CN"};
         var attributes = {};
         for (let option in options) {
           if (!option.startsWith('theme-')) {
@@ -2382,8 +2382,8 @@ NPDA允许再相同的输入和栈顶符号时有多个状态转移，也允许<
 
 <script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
 <script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
+<script  src="/blog/js/events.js" ></script>
+<script  src="/blog/js/plugins.js" ></script>
 
 
   <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
@@ -2405,7 +2405,7 @@ NPDA允许再相同的输入和栈顶符号时有多个状态转移，也允许<
 
 
   
-    <script  src="/js/img-lazyload.js" ></script>
+    <script  src="/blog/js/img-lazyload.js" ></script>
   
 
 
@@ -2504,7 +2504,7 @@ NPDA允许再相同的输入和栈顶符号时有多个状态转移，也允许<
 
   <script>Fluid.plugins.imageCaption();</script>
 
-  <script  src="/js/local-search.js" ></script>
+  <script  src="/blog/js/local-search.js" ></script>
 
   <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
@@ -2512,13 +2512,13 @@ NPDA允许再相同的输入和栈顶符号时有多个状态转移，也允许<
 
 
   
-<script src="/js/mermaid-init.js"></script>
+<script src="/blog/js/mermaid-init.js"></script>
 
 
 
 <!-- 主题的启动项，将它保持在最底部 -->
 <!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
+<script  src="/blog/js/boot.js" ></script>
 
 
   

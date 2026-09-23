@@ -8,8 +8,8 @@
 <head>
   <meta charset="UTF-8">
 
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/my_icon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/blog/img/fluid.png">
+  <link rel="icon" href="/blog/img/my_icon.png">
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
@@ -22,19 +22,19 @@
     <meta name="description" content="P问题是在多项式时间可以解决的问题">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Introduction to Algorithm-06-NP completeness">
-<meta property="og:url" content="https://yima-gu.github.io/2025/06/16/algorithm/Introduction%20to%20Algorithm-06-NP%20completeness/index.html">
+<meta property="og:url" content="https://yima-gu.github.io/blog/2025/06/16/algorithm/Introduction%20to%20Algorithm-06-NP%20completeness/index.html">
 <meta property="og:site_name" content="Yima Gu&#39;s Blog">
 <meta property="og:description" content="P问题是在多项式时间可以解决的问题">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://yima-gu.github.io/2025/06/16/algorithm/Introduction%20to%20Algorithm-06-NP%20completeness/%7B475DC351-2957-4A92-A92F-27AE3B8C77B9%7D.png">
-<meta property="og:image" content="https://yima-gu.github.io/2025/06/16/algorithm/Introduction%20to%20Algorithm-06-NP%20completeness/Pasted%20image%2020251107190725.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/06/16/algorithm/Introduction%20to%20Algorithm-06-NP%20completeness/%7B475DC351-2957-4A92-A92F-27AE3B8C77B9%7D.png">
+<meta property="og:image" content="https://yima-gu.github.io/blog/2025/06/16/algorithm/Introduction%20to%20Algorithm-06-NP%20completeness/Pasted%20image%2020251107190725.png">
 <meta property="article:published_time" content="2025-06-16T03:45:00.000Z">
-<meta property="article:modified_time" content="2026-07-01T11:38:22.796Z">
+<meta property="article:modified_time" content="2026-09-23T08:10:17.389Z">
 <meta property="article:author" content="Yima Gu">
 <meta property="article:tag" content="Algorithm">
 <meta property="article:tag" content="NP completeness">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://yima-gu.github.io/2025/06/16/algorithm/Introduction%20to%20Algorithm-06-NP%20completeness/%7B475DC351-2957-4A92-A92F-27AE3B8C77B9%7D.png">
+<meta name="twitter:image" content="https://yima-gu.github.io/blog/2025/06/16/algorithm/Introduction%20to%20Algorithm-06-NP%20completeness/%7B475DC351-2957-4A92-A92F-27AE3B8C77B9%7D.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -66,33 +66,33 @@
 <link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
 
 
-<link  rel="stylesheet" href="/css/main.css" />
+<link  rel="stylesheet" href="/blog/css/main.css" />
 
 
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  <link id="highlight-css" rel="stylesheet" href="/blog/css/highlight.css" />
   
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+    <link id="highlight-css-dark" rel="stylesheet" href="/blog/css/highlight-dark.css" />
   
 
 
 
   
-<link rel="stylesheet" href="/css/custom.css">
+<link rel="stylesheet" href="/blog/css/custom.css">
 
 
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"yima-gu.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":"G-JFL0C5NV2V","tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"yima-gu.github.io","root":"/blog/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":"G-JFL0C5NV2V","tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/blog/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
       Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
     }
   </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
+  <script  src="/blog/js/utils.js" ></script>
+  <script  src="/blog/js/color-schema.js" ></script>
   
 
   
@@ -108,7 +108,7 @@
 
 
   
-<meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/atom.xml" title="Yima Gu's Blog" type="application/atom+xml">
+<meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/blog/atom.xml" title="Yima Gu's Blog" type="application/atom+xml">
 </head>
 
 
@@ -121,7 +121,7 @@
 <div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand" href="/blog/">
       <strong>Yima Gu&#39;s Blog</strong>
     </a>
 
@@ -140,7 +140,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/" target="_self">
+              <a class="nav-link" href="/blog/" target="_self">
                 <i class="iconfont icon-home-fill"></i>
                 <span>首页</span>
               </a>
@@ -152,7 +152,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/series/" target="_self">
+              <a class="nav-link" href="/blog/series/" target="_self">
                 <i class="iconfont icon-books-fill"></i>
                 <span>系列笔记</span>
               </a>
@@ -164,7 +164,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/archives/" target="_self">
+              <a class="nav-link" href="/blog/archives/" target="_self">
                 <i class="iconfont icon-archive-fill"></i>
                 <span>归档</span>
               </a>
@@ -176,7 +176,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/categories/" target="_self">
+              <a class="nav-link" href="/blog/categories/" target="_self">
                 <i class="iconfont icon-category-fill"></i>
                 <span>分类</span>
               </a>
@@ -188,7 +188,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/tags/" target="_self">
+              <a class="nav-link" href="/blog/tags/" target="_self">
                 <i class="iconfont icon-tags-fill"></i>
                 <span>标签</span>
               </a>
@@ -200,7 +200,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/about/" target="_self">
+              <a class="nav-link" href="/blog/about/" target="_self">
                 <i class="iconfont icon-user-fill"></i>
                 <span>关于</span>
               </a>
@@ -230,7 +230,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/bg/post.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('/blog/img/bg/post.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -365,7 +365,7 @@
           </div>
 <p><strong>注意：在将问题转换为判定问题时，一般是判定当前实例是否满足<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≥</mo></mrow><annotation encoding="application/x-tex">\ge</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≥</span></span></span></span>或<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≤</mo></mrow><annotation encoding="application/x-tex">\le</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≤</span></span></span></span>当前的整数<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span></span></span></span>的，这样可以获得单调性，通过二分搜索来获得原问题的解。</strong><br>
 ![](Pasted image 20251107190421.png)<br>
-<img src="%7B475DC351-2957-4A92-A92F-27AE3B8C77B9%7D.png" srcset="/img/loading.gif" lazyload alt=""><sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="[算法导论 34.1 Exercises 答案 | Ujimatsu Chiya](https://ujimatsu-chiya.github.io/INTRODUCTION-TO-ALGORITHMS/34-1-Exercises/?highlight=34.1)">[1]</span></a></sup></p>
+<img src="%7B475DC351-2957-4A92-A92F-27AE3B8C77B9%7D.png" srcset="/blog/img/loading.gif" lazyload alt=""><sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="[算法导论 34.1 Exercises 答案 | Ujimatsu Chiya](https://ujimatsu-chiya.github.io/INTRODUCTION-TO-ALGORITHMS/34-1-Exercises/?highlight=34.1)">[1]</span></a></sup></p>
 <h2 id="NP-completeness">NP-completeness</h2>
 <p>NP-hard问题是指这个问题至少和NP问题一样难，并且不要求给定一个证书，这个问题在多项式时间内可验证。</p>
 <p>认为电路的可满足性问题是<strong>第一个NPC问题</strong>。在这个基础上，可以将已知的NPC问题归约到新的问题上。</p>
@@ -401,7 +401,7 @@
 <p>子集和问题是指给定一个整数集合和一个目标整数，判断是否存在一个子集的元素之和等于目标整数。对应的判定问题为给定一个整数集合<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span>和一个整数<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span></span></span></span>，判断是否存在一个子集的元素之和等于<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span></span></span></span>。</p>
 <p>使用3-CNF-SAT问题进行归约，具体步骤如下：<br>
 对于有<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span>个变量和<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span></span></span></span>个子句的三合取范式，对每一个子句和变量，构造一个集合中长度为<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>+</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">n+k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span></span></span></span>的10进制整数，由于合取范式的特殊性，在每一个子句中，如果有一个文字为真，那么该分句为真。<br>
-<img src="Pasted image 20251107190725.png" srcset="/img/loading.gif" lazyload alt="" width="350"></p>
+<img src="Pasted image 20251107190725.png" srcset="/blog/img/loading.gif" lazyload alt="" width="350"></p>
 <p>在上面的构建中，由于每一种赋值，要么为1，要么为0，于是前3位的target为1，在满足成真赋值的情况后面四位的可能取值为<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>∼</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">1\sim 3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∼</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span></span></span></span>于是加入松弛变量s</p>
 <section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span><a target="_blank" rel="noopener" href="https://ujimatsu-chiya.github.io/INTRODUCTION-TO-ALGORITHMS/34-1-Exercises/?highlight=34.1">算法导论 34.1 Exercises 答案 | Ujimatsu Chiya</a>
 <a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:2" class="footnote-text"><span><a target="_blank" rel="noopener" href="https://ujimatsu-chiya.github.io/INTRODUCTION-TO-ALGORITHMS/34-1-Exercises/?highlight=34.1">算法导论 34.1 Exercises 答案 | Ujimatsu Chiya</a>
@@ -423,7 +423,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Algorithm/" class="category-chain-item">Algorithm</a>
+  <a href="/blog/categories/Algorithm/" class="category-chain-item">Algorithm</a>
   
   
 
@@ -438,9 +438,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Algorithm/" class="print-no-link">#Algorithm</a>
+        <a href="/blog/tags/Algorithm/" class="print-no-link">#Algorithm</a>
       
-        <a href="/tags/NP-completeness/" class="print-no-link">#NP completeness</a>
+        <a href="/blog/tags/NP-completeness/" class="print-no-link">#NP completeness</a>
       
     </div>
   
@@ -453,7 +453,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>Introduction to Algorithm-06-NP completeness</div>
-      <div>https://yima-gu.github.io/2025/06/16/algorithm/Introduction to Algorithm-06-NP completeness/</div>
+      <div>https://yima-gu.github.io/blog/2025/06/16/algorithm/Introduction to Algorithm-06-NP completeness/</div>
     </div>
     <div class="license-meta">
       
@@ -509,7 +509,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/06/16/algorithm/Introduction%20to%20Algorithm-07-Approximation%20Algorithm/" title="Introduction to Algorithm-07-Approximation Algorithm">
+                      <a href="/blog/2025/06/16/algorithm/Introduction%20to%20Algorithm-07-Approximation%20Algorithm/" title="Introduction to Algorithm-07-Approximation Algorithm">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">Introduction to Algorithm-07-Approximation Algorithm</span>
                         <span class="visible-mobile">上一篇</span>
@@ -519,7 +519,7 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/06/16/algorithm/Introduction%20to%20Algorithm-05-String%20Matching/" title="Introduction to Algorithm-05-String Matching">
+                      <a href="/blog/2025/06/16/algorithm/Introduction%20to%20Algorithm-05-String%20Matching/" title="Introduction to Algorithm-05-String Matching">
                         <span class="hidden-mobile">Introduction to Algorithm-05-String Matching</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
@@ -538,7 +538,7 @@
     <div id="giscus" class="giscus"></div>
     <script type="text/javascript">
       Fluid.utils.loadComments('#giscus', function() {
-        var options = {"repo":"Yima-Gu/Yima-Gu.github.io","repo-id":"R_kgDOPz-yyQ","category":"General","category-id":"DIC_kwDOPz-yyc4CvvD2","theme-light":"preferred_color_scheme","theme-dark":"preferred_color_scheme","mapping":"pathname","reactions-enabled":1,"emit-metadata":0,"input-position":"bottom","lang":"zh-CN"};
+        var options = {"repo":"Yima-Gu/blog","repo-id":"R_kgDOPz-yyQ","category":"General","category-id":"DIC_kwDOPz-yyc4CvvD2","theme-light":"preferred_color_scheme","theme-dark":"preferred_color_scheme","mapping":"pathname","reactions-enabled":1,"emit-metadata":0,"input-position":"bottom","lang":"zh-CN"};
         var attributes = {};
         for (let option in options) {
           if (!option.startsWith('theme-')) {
@@ -723,8 +723,8 @@
 
 <script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
 <script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
+<script  src="/blog/js/events.js" ></script>
+<script  src="/blog/js/plugins.js" ></script>
 
 
   <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
@@ -746,7 +746,7 @@
 
 
   
-    <script  src="/js/img-lazyload.js" ></script>
+    <script  src="/blog/js/img-lazyload.js" ></script>
   
 
 
@@ -845,7 +845,7 @@
 
   <script>Fluid.plugins.imageCaption();</script>
 
-  <script  src="/js/local-search.js" ></script>
+  <script  src="/blog/js/local-search.js" ></script>
 
   <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
@@ -853,13 +853,13 @@
 
 
   
-<script src="/js/mermaid-init.js"></script>
+<script src="/blog/js/mermaid-init.js"></script>
 
 
 
 <!-- 主题的启动项，将它保持在最底部 -->
 <!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
+<script  src="/blog/js/boot.js" ></script>
 
 
   

@@ -8,8 +8,8 @@
 <head>
   <meta charset="UTF-8">
 
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/my_icon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/blog/img/fluid.png">
+  <link rel="icon" href="/blog/img/my_icon.png">
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
@@ -22,12 +22,12 @@
     <meta name="description" content="Chapter 8: Network Security (Part 2)">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Network - 06.Security-02">
-<meta property="og:url" content="https://yima-gu.github.io/2026/01/14/Network/Network-06-Security-02/index.html">
+<meta property="og:url" content="https://yima-gu.github.io/blog/2026/01/14/Network/Network-06-Security-02/index.html">
 <meta property="og:site_name" content="Yima Gu&#39;s Blog">
 <meta property="og:description" content="Chapter 8: Network Security (Part 2)">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-01-14T19:40:00.000Z">
-<meta property="article:modified_time" content="2026-07-01T11:38:22.795Z">
+<meta property="article:modified_time" content="2026-09-23T08:10:17.388Z">
 <meta property="article:author" content="Yima Gu">
 <meta property="article:tag" content="Network">
 <meta name="twitter:card" content="summary_large_image">
@@ -62,33 +62,33 @@
 <link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
 
 
-<link  rel="stylesheet" href="/css/main.css" />
+<link  rel="stylesheet" href="/blog/css/main.css" />
 
 
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  <link id="highlight-css" rel="stylesheet" href="/blog/css/highlight.css" />
   
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+    <link id="highlight-css-dark" rel="stylesheet" href="/blog/css/highlight-dark.css" />
   
 
 
 
   
-<link rel="stylesheet" href="/css/custom.css">
+<link rel="stylesheet" href="/blog/css/custom.css">
 
 
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"yima-gu.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":"G-JFL0C5NV2V","tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"yima-gu.github.io","root":"/blog/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":"G-JFL0C5NV2V","tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/blog/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
       Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
     }
   </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
+  <script  src="/blog/js/utils.js" ></script>
+  <script  src="/blog/js/color-schema.js" ></script>
   
 
   
@@ -104,7 +104,7 @@
 
 
   
-<meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/atom.xml" title="Yima Gu's Blog" type="application/atom+xml">
+<meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/blog/atom.xml" title="Yima Gu's Blog" type="application/atom+xml">
 </head>
 
 
@@ -117,7 +117,7 @@
 <div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand" href="/blog/">
       <strong>Yima Gu&#39;s Blog</strong>
     </a>
 
@@ -136,7 +136,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/" target="_self">
+              <a class="nav-link" href="/blog/" target="_self">
                 <i class="iconfont icon-home-fill"></i>
                 <span>首页</span>
               </a>
@@ -148,7 +148,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/series/" target="_self">
+              <a class="nav-link" href="/blog/series/" target="_self">
                 <i class="iconfont icon-books-fill"></i>
                 <span>系列笔记</span>
               </a>
@@ -160,7 +160,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/archives/" target="_self">
+              <a class="nav-link" href="/blog/archives/" target="_self">
                 <i class="iconfont icon-archive-fill"></i>
                 <span>归档</span>
               </a>
@@ -172,7 +172,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/categories/" target="_self">
+              <a class="nav-link" href="/blog/categories/" target="_self">
                 <i class="iconfont icon-category-fill"></i>
                 <span>分类</span>
               </a>
@@ -184,7 +184,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/tags/" target="_self">
+              <a class="nav-link" href="/blog/tags/" target="_self">
                 <i class="iconfont icon-tags-fill"></i>
                 <span>标签</span>
               </a>
@@ -196,7 +196,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/about/" target="_self">
+              <a class="nav-link" href="/blog/about/" target="_self">
                 <i class="iconfont icon-user-fill"></i>
                 <span>关于</span>
               </a>
@@ -226,7 +226,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/bg/post.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('/blog/img/bg/post.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -710,7 +710,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Network/" class="category-chain-item">Network</a>
+  <a href="/blog/categories/Network/" class="category-chain-item">Network</a>
   
   
 
@@ -725,7 +725,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Network/" class="print-no-link">#Network</a>
+        <a href="/blog/tags/Network/" class="print-no-link">#Network</a>
       
     </div>
   
@@ -738,7 +738,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>Network - 06.Security-02</div>
-      <div>https://yima-gu.github.io/2026/01/14/Network/Network-06-Security-02/</div>
+      <div>https://yima-gu.github.io/blog/2026/01/14/Network/Network-06-Security-02/</div>
     </div>
     <div class="license-meta">
       
@@ -798,7 +798,7 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2026/01/14/Network/Network-06-Security-01/" title="Network - 06.Security-01">
+                      <a href="/blog/2026/01/14/Network/Network-06-Security-01/" title="Network - 06.Security-01">
                         <span class="hidden-mobile">Network - 06.Security-01</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
@@ -817,7 +817,7 @@
     <div id="giscus" class="giscus"></div>
     <script type="text/javascript">
       Fluid.utils.loadComments('#giscus', function() {
-        var options = {"repo":"Yima-Gu/Yima-Gu.github.io","repo-id":"R_kgDOPz-yyQ","category":"General","category-id":"DIC_kwDOPz-yyc4CvvD2","theme-light":"preferred_color_scheme","theme-dark":"preferred_color_scheme","mapping":"pathname","reactions-enabled":1,"emit-metadata":0,"input-position":"bottom","lang":"zh-CN"};
+        var options = {"repo":"Yima-Gu/blog","repo-id":"R_kgDOPz-yyQ","category":"General","category-id":"DIC_kwDOPz-yyc4CvvD2","theme-light":"preferred_color_scheme","theme-dark":"preferred_color_scheme","mapping":"pathname","reactions-enabled":1,"emit-metadata":0,"input-position":"bottom","lang":"zh-CN"};
         var attributes = {};
         for (let option in options) {
           if (!option.startsWith('theme-')) {
@@ -1002,8 +1002,8 @@
 
 <script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
 <script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
+<script  src="/blog/js/events.js" ></script>
+<script  src="/blog/js/plugins.js" ></script>
 
 
   <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
@@ -1025,7 +1025,7 @@
 
 
   
-    <script  src="/js/img-lazyload.js" ></script>
+    <script  src="/blog/js/img-lazyload.js" ></script>
   
 
 
@@ -1124,7 +1124,7 @@
 
   <script>Fluid.plugins.imageCaption();</script>
 
-  <script  src="/js/local-search.js" ></script>
+  <script  src="/blog/js/local-search.js" ></script>
 
   <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
@@ -1132,13 +1132,13 @@
 
 
   
-<script src="/js/mermaid-init.js"></script>
+<script src="/blog/js/mermaid-init.js"></script>
 
 
 
 <!-- 主题的启动项，将它保持在最底部 -->
 <!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
+<script  src="/blog/js/boot.js" ></script>
 
 
   
