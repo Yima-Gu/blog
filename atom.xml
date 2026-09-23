@@ -10,7 +10,7 @@
   <rights>All rights reserved 2026, Yima Gu</rights>
   <subtitle>计算机课程笔记与学习复盘</subtitle>
   <title>Yima Gu's Blog</title>
-  <updated>2026-09-23T08:10:17.388Z</updated>
+  <updated>2026-09-23T08:15:35.885Z</updated>
   <entry>
     <author>
       <name>Yima Gu</name>
@@ -25,7 +25,7 @@
     <published>2026-01-14T19:40:00.000Z</published>
     <summary>Chapter 8: Network Security (Part 2)</summary>
     <title>Network - 06.Security-02</title>
-    <updated>2026-09-23T08:10:17.388Z</updated>
+    <updated>2026-09-23T08:15:35.885Z</updated>
   </entry>
   <entry>
     <author>
@@ -41,7 +41,7 @@
     <published>2026-01-14T19:30:00.000Z</published>
     <summary>本章不仅仅是介绍加密算法，而是构建一套解决网络中“信任”问题的工具箱。学习时请遵循以下层层递进的逻辑链条：</summary>
     <title>Network - 06.Security-01</title>
-    <updated>2026-09-23T08:10:17.388Z</updated>
+    <updated>2026-09-23T08:15:35.885Z</updated>
   </entry>
   <entry>
     <author>
@@ -57,7 +57,7 @@
     <published>2026-01-14T19:20:00.000Z</published>
     <summary>* 冲突的本质： 互联网最初是为数据传输（如文件、邮件）设计的，提供的是“尽力而为 (Best-Effort)”的服务——不保证时间，但保证完整。然而，多媒体应用（音频/视频）的需求恰恰相反：它们对延迟和抖动极度敏感，但对少量丢包可以容忍。</summary>
     <title>Network - 05.Multimedia Networking</title>
-    <updated>2026-09-23T08:10:17.387Z</updated>
+    <updated>2026-09-23T08:15:35.884Z</updated>
   </entry>
   <entry>
     <author>
@@ -73,7 +73,7 @@
     <published>2026-01-14T19:15:00.000Z</published>
     <summary>第6章：无线与移动网络 (Wireless and Mobile Networks)</summary>
     <title>Network - 04.Data Link Layer-02</title>
-    <updated>2026-09-23T08:10:17.387Z</updated>
+    <updated>2026-09-23T08:15:35.884Z</updated>
   </entry>
   <entry>
     <author>
@@ -89,7 +89,7 @@
     <published>2026-01-14T19:10:00.000Z</published>
     <summary>这一层负责在物理上相邻的两个节点之间传输数据。</summary>
     <title>Network - 04.Data Link Layer-01</title>
-    <updated>2026-09-23T08:10:17.387Z</updated>
+    <updated>2026-09-23T08:15:35.884Z</updated>
   </entry>
   <entry>
     <author>
@@ -105,7 +105,7 @@
     <published>2026-01-14T19:05:00.000Z</published>
     <summary>路由算法 (Routing Algorithms)</summary>
     <title>Network - 03.Network Layer-02</title>
-    <updated>2026-09-23T08:10:17.387Z</updated>
+    <updated>2026-09-23T08:15:35.884Z</updated>
   </entry>
   <entry>
     <author>
@@ -121,7 +121,7 @@
     <published>2026-01-14T19:00:00.000Z</published>
     <summary>主要任务： 将数据报 (datagrams) 从源主机跨越多个网络路由 (routing) 到目标主机。</summary>
     <title>Network - 03.Network Layer-01</title>
-    <updated>2026-09-23T08:10:17.387Z</updated>
+    <updated>2026-09-23T08:15:35.884Z</updated>
   </entry>
   <entry>
     <author>
@@ -137,7 +137,7 @@
     <published>2026-01-14T18:55:00.000Z</published>
     <summary>3.4 可靠数据传输 (Reliable Data Transfer - RDT) 原理</summary>
     <title>Network - 02.Transport Layer-02</title>
-    <updated>2026-09-23T08:10:17.387Z</updated>
+    <updated>2026-09-23T08:15:35.884Z</updated>
   </entry>
   <entry>
     <author>
@@ -153,7 +153,7 @@
     <published>2026-01-14T18:45:00.000Z</published>
     <summary>在两个端点（主机）上运行的应用程序进程之间建立、管理和终止通信会话。这与网络层负责主机之间的通信形成对比。</summary>
     <title>Network - 02.Transport Layer-01</title>
-    <updated>2026-09-23T08:10:17.387Z</updated>
+    <updated>2026-09-23T08:15:35.884Z</updated>
   </entry>
   <entry>
     <author>
@@ -169,7 +169,7 @@
     <published>2026-01-14T18:40:00.000Z</published>
     <summary>Program Optimization (程序性能优化)</summary>
     <title>CSAPP - 09.Optimization</title>
-    <updated>2026-09-23T08:10:17.380Z</updated>
+    <updated>2026-09-23T08:15:35.879Z</updated>
   </entry>
   <entry>
     <author>
@@ -185,7 +185,7 @@
     <published>2026-01-14T18:40:00.000Z</published>
     <summary>为用户应用程序提供网络服务，并定义应用程序之间通信的规则。</summary>
     <title>Network - 01.Application Layer</title>
-    <updated>2026-09-23T08:10:17.386Z</updated>
+    <updated>2026-09-23T08:15:35.883Z</updated>
   </entry>
   <entry>
     <author>
@@ -201,7 +201,7 @@
     <published>2026-01-14T18:35:00.000Z</published>
     <summary>主要内容 (Overview)：</summary>
     <title>CSAPP - 08.MEM-02</title>
-    <updated>2026-09-23T08:10:17.380Z</updated>
+    <updated>2026-09-23T08:15:35.879Z</updated>
   </entry>
   <entry>
     <author>
@@ -217,7 +217,7 @@
     <published>2026-01-14T18:30:00.000Z</published>
     <summary>计算机组成原理笔记：存储器层次结构 (The Memory Hierarchy)</summary>
     <title>CSAPP - 08.MEM-01</title>
-    <updated>2026-09-23T08:10:17.380Z</updated>
+    <updated>2026-09-23T08:15:35.879Z</updated>
   </entry>
   <entry>
     <author>
@@ -233,7 +233,7 @@
     <published>2026-01-14T18:25:00.000Z</published>
     <summary>计算机组成原理笔记：流水线实现 II (Pipelined Implementation Part II)</summary>
     <title>CSAPP - 07.PIPE-02</title>
-    <updated>2026-09-23T08:10:17.380Z</updated>
+    <updated>2026-09-23T08:15:35.879Z</updated>
   </entry>
   <entry>
     <author>
@@ -249,7 +249,7 @@
     <published>2026-01-14T18:20:00.000Z</published>
     <summary>本章重点介绍了从 SEQ (顺序执行) 处理器向 PIPE (流水线) 处理器的演进过程。</summary>
     <title>CSAPP - 07.PIPE-01</title>
-    <updated>2026-09-23T08:10:17.379Z</updated>
+    <updated>2026-09-23T08:15:35.879Z</updated>
   </entry>
   <entry>
     <author>
@@ -265,7 +265,7 @@
     <published>2026-01-14T18:15:00.000Z</published>
     <summary>计算机体系结构笔记：SEQ 顺序实现 (Sequential Implementation)</summary>
     <title>CSAPP - 06. SEQ</title>
-    <updated>2026-09-23T08:10:17.379Z</updated>
+    <updated>2026-09-23T08:15:35.879Z</updated>
   </entry>
   <entry>
     <author>
@@ -281,7 +281,7 @@
     <published>2026-01-14T18:10:00.000Z</published>
     <summary>计算机体系结构：逻辑设计 (Computer Architecture: Logic Design)</summary>
     <title>CSAPP - 05.Logic</title>
-    <updated>2026-09-23T08:10:17.379Z</updated>
+    <updated>2026-09-23T08:15:35.879Z</updated>
   </entry>
   <entry>
     <author>
@@ -297,7 +297,7 @@
     <published>2026-01-14T18:05:00.000Z</published>
     <summary>计算机体系结构: ISA (Instruction Set Architecture)</summary>
     <title>CSAPP - 04.ISA</title>
-    <updated>2026-09-23T08:10:17.379Z</updated>
+    <updated>2026-09-23T08:15:35.879Z</updated>
   </entry>
   <entry>
     <author>
@@ -313,7 +313,7 @@
     <published>2026-01-14T18:00:00.000Z</published>
     <summary>机器级编程 IV：高级 （Advanced Topics）</summary>
     <title>CSAPP - 03.Machine-Level Programming IV</title>
-    <updated>2026-09-23T08:10:17.379Z</updated>
+    <updated>2026-09-23T08:15:35.879Z</updated>
   </entry>
   <entry>
     <author>
@@ -329,7 +329,7 @@
     <published>2026-01-14T17:55:00.000Z</published>
     <summary>机器级编程 III: 过程 (Procedures)</summary>
     <title>CSAPP - 03.Machine-Level Programming III</title>
-    <updated>2026-09-23T08:10:17.379Z</updated>
+    <updated>2026-09-23T08:15:35.879Z</updated>
   </entry>
   <entry>
     <author>
@@ -347,7 +347,7 @@
       <![CDATA[机器级编程 II：算数与控制 (Machine-Level Programming II: Arithmetic & Control)]]>
     </summary>
     <title>CSAPP - 03.Machine-Level Programming II</title>
-    <updated>2026-09-23T08:10:17.379Z</updated>
+    <updated>2026-09-23T08:15:35.879Z</updated>
   </entry>
   <entry>
     <author>
@@ -363,7 +363,7 @@
     <published>2026-01-14T17:40:00.000Z</published>
     <summary>对干机器级编程来说，其中两种抽象尤为重要。第一种是由指令集体系结构或指令集架构(Instruction Set Architecture,ISA)来定义机器级程序的格式和行为，它定义了处理器状态、指令的格式，以及每条指令对状态的影响。</summary>
     <title>CSAPP - 03.Machine-Level Programming I</title>
-    <updated>2026-09-23T08:10:17.379Z</updated>
+    <updated>2026-09-23T08:15:35.879Z</updated>
   </entry>
   <entry>
     <author>
@@ -379,7 +379,7 @@
     <published>2026-01-14T17:30:00.000Z</published>
     <summary>一、小数的二进制表示 (Fractional Binary Numbers)</summary>
     <title>CSAPP - 02.Floating Point Numbers</title>
-    <updated>2026-09-23T08:10:17.379Z</updated>
+    <updated>2026-09-23T08:15:35.879Z</updated>
   </entry>
   <entry>
     <author>
@@ -395,7 +395,7 @@
     <published>2026-01-14T17:20:00.000Z</published>
     <summary>1. 核心概念：位、字节与字</summary>
     <title>CSAPP - 01.bits, Bytes and Integers</title>
-    <updated>2026-09-23T08:10:17.379Z</updated>
+    <updated>2026-09-23T08:15:35.879Z</updated>
   </entry>
   <entry>
     <author>
@@ -417,7 +417,7 @@
       <![CDATA[Deep Dive: OaK Architecture & The Era of Experience]]>
     </summary>
     <title>The Era of Experience</title>
-    <updated>2026-09-23T08:10:17.389Z</updated>
+    <updated>2026-09-23T08:15:35.886Z</updated>
   </entry>
   <entry>
     <author>
@@ -434,7 +434,7 @@
     <published>2025-08-03T09:41:00.000Z</published>
     <summary>Generative Model</summary>
     <title>DL Notes-7 Generative Models</title>
-    <updated>2026-09-23T08:10:17.381Z</updated>
+    <updated>2026-09-23T08:15:35.880Z</updated>
   </entry>
   <entry>
     <author>
@@ -451,7 +451,7 @@
     <published>2025-08-01T07:41:00.000Z</published>
     <summary>Transformers</summary>
     <title>DL Notes-6 Transformers</title>
-    <updated>2026-09-23T08:10:17.381Z</updated>
+    <updated>2026-09-23T08:15:35.880Z</updated>
   </entry>
   <entry>
     <author>
@@ -468,7 +468,7 @@
     <published>2025-07-28T04:30:00.000Z</published>
     <summary>Recurrent Network</summary>
     <title>DL Note-5 RNN</title>
-    <updated>2026-09-23T08:10:17.381Z</updated>
+    <updated>2026-09-23T08:15:35.880Z</updated>
   </entry>
   <entry>
     <author>
@@ -485,7 +485,7 @@
     <published>2025-07-21T06:30:00.000Z</published>
     <summary>Optimization</summary>
     <title>DL Note-4 Optimization</title>
-    <updated>2026-09-23T08:10:17.381Z</updated>
+    <updated>2026-09-23T08:15:35.880Z</updated>
   </entry>
   <entry>
     <author>
@@ -503,6 +503,6 @@
     <published>2025-07-19T16:00:00.000Z</published>
     <summary>AI Agent：人类只给AI目标，AI自己想办法完成某个研究问题。</summary>
     <title>AI Agent Notes</title>
-    <updated>2026-09-23T08:10:17.382Z</updated>
+    <updated>2026-09-23T08:15:35.880Z</updated>
   </entry>
 </feed>
