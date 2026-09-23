@@ -37,8 +37,8 @@ layout: page
 
 自动机、文法、可计算性等理论笔记。
 
-- [形式语言与自动机](/blog/2025/06/15/Formal_Language&Automata/形式语言与自动机/)
+- {% post_link 形式语言与自动机 '形式语言与自动机' %}
 
 ### 💬 杂谈
 
-- [The Era of Experience](/blog/2025/12/01/talks/The%20Era%20of%20Experience/)
+- {% post_link 'The Era of Experience' 'The Era of Experience' %}
